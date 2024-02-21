@@ -1,0 +1,95 @@
+//global variables for whole components
+$dark-gary: #3C3A3A;
+$light-yellow: #FFD600;
+$white:#fff;
+$font: montserrat;
+$font-min:16px;
+$border-color:#3c3a3a3b;
+$border-radius:4px;
+$box-shadow:0px 15px 50px 1px rgba(0, 0, 0, 0.08);
+$white-transparent:#ffffffd9;
+ 
+ 
+
+
+//mixin for section all section
+@mixin section-padding(){
+    padding: 30px 10px 0px 10px;
+}
+ 
+
+
+//extend for max-width
+%max-width{
+    max-width: 1240px;
+    margin: 0px auto;
+}
+//entend for all (<p>)
+%paragraph {
+    font-size: $font-min;
+    color: $dark-gary;
+    margin: 0px;
+    font-family: $font;
+}
+
+//extend for custom button
+
+%custom-button{
+    background-color: transparent;
+    border: unset;
+    font-size: $font-min;
+    font-family: $font;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+//extend for home (<h3>)
+%home-heading-h3{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0px;
+}
+
+
+//extend for all section top margin
+%section-top-margin{
+    margin-top:30px
+}
+
+//extenf for add-to-cart button
+%add-to-cart-button{
+    width: 100%;
+    border: unset;
+    padding: 4px;
+    text-transform: capitalize;
+    font-family: montserrat;
+    font-weight: 500;
+    background: #FFD600;
+    border-radius: 20px;
+    color: #3C3A3A;
+}
+
+//extend for card heading (<h3>)
+%card-heading-size-h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+    color: #3C3A3A;
+}
+
+//flex property
+
+%flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//z-ndex
+%z-index-strong{
+    z-index: 9999999;
+}
+%z-index-low{
+    z-index:99;
+}
