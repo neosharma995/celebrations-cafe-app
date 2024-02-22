@@ -18,12 +18,12 @@ div#root {
 
 
 /*global header css*/
-button.notifications svg {
+.notifications svg {
   color: #FFD600;
   font-size: 30px;
 }
 
-button.toggle{
+.toggle{
   display: flex;
   flex-direction: column;
   row-gap: 6px;
@@ -320,6 +320,35 @@ img {
   text-align: center;
 }
 
+
+//header menu page
+
+.show-menu-inner {
+ @extend %max-width
+}
+.show-menu-outer {
+  @include section-padding();
+}
+
+
+
+// notification section
+.notification-outer{
+  @include section-padding();
+}
+.notification-inner{
+  @extend %max-width;
+}
+
+
+ 
+// profile page css
+.profile-outer{
+  @include section-padding();
+}
+.profile-inner{
+  @extend %max-width;
+}
  
 
 

@@ -1,10 +1,10 @@
  
 
-import './pages/scss/App.scss'
-import Home from './pages/Home'
+import '/src/css/App.scss'
+import Footer from './layouts/footer/Footer'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './router/Router'
  
-import Header from './header/Header'
-import Footer from './footer/Footer'
  
 
 function App() {
@@ -12,12 +12,9 @@ function App() {
 
   return (
     <>
-       
-      <Header scroll={100}/>
-      <Home/>
-      <Footer/>
      
-       
+      <RouterProvider router={router}/>
+      <Footer/>
        </>
     
   )
