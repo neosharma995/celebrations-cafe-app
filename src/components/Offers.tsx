@@ -36,8 +36,8 @@ function Offers() {
                                 showDots={false}
                                 responsive={responsive}
                                 infinite={true}
-                                autoPlay={false}
-                                autoPlaySpeed={300}
+                                autoPlay={true}
+                                autoPlaySpeed={2000}
                                 removeArrowOnDeviceType={['tablet', 'mobile']}
                                 dotListClass="custom-dot-list-style"
 
